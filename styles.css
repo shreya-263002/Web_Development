@@ -1,0 +1,236 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    position: absolute;
+    width: 300px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.wrapper h1{
+    font-family: Georgia;
+    font-size: 36px;
+    text-align: center;
+    color: #650000;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 80%;
+    height: 50px;
+    margin: 30px;
+}
+
+.input-box input{
+    font-family: Georgia;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    font-size: 16px;
+    color: #650000;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255,255,255,0.2);
+    border-radius: 20px;
+}
+
+.input-box input::placeholder{
+    font-family: Georgia;
+    color: #650000;
+
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forget{
+    font-family: Georgia;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forget label input{
+    font-family: Georgia;
+    accent-color: #650000;
+    margin-right: 3px;
+}
+
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    font-family: Georgia;
+    width: 100%;
+    height: 45px;
+    background: #650000;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.wrapper .btn:hover{
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    border-color: #fff;
+}
+
+.wrapper .register-link{
+    font-family: Georgia;
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.registert-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+.trees{
+    position: absolute;
+}
+
+.girl {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    animation-name: girl_animation;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+  }
+
+   @keyframes girl_animation {
+    0% {
+        left: 0;
+        transform: scaleX(1); 
+    }
+    50% {
+        left: calc(100% - 10px);
+        transform: scaleX(1); 
+    }
+    50.1% {
+        transform: scaleX(-1); 
+    }
+    100% {
+        left: -10%;
+        transform: scaleX(-1); 
+    }
+}
+
+.leaf1{
+    position: absolute;
+            width: 20px;
+            height: 20px;
+            left:100px;
+            animation: fall 7s linear infinite;
+}
+.leaf2{
+    position: relative;
+            width: 10px;
+            height: 10px;
+            right: 100px;
+            animation: fall 8s linear infinite;
+}
+.leaf3{
+    position: relative;
+            width: 20px;
+            height: 20px;
+            left: 700px;
+            animation: fall 5s linear infinite;
+}
+.leaf4{
+    position: relative;
+            width: 20px;
+            height: 20px;
+            left: 450px;
+            animation: fall 6s linear infinite;
+}
+.leaf5{
+    position: relative;
+            width: 20px;
+            height: 20px;
+            left: 50px;
+            animation: fall 7s linear infinite;
+}
+.leaf6{
+    position: relative;
+            width: 20px;
+            height: 20px;
+            left: 250px;
+            animation: fall 6s linear infinite;
+}
+.leaf7{
+    position: relative;
+            width: 20px;
+            height: 20px;
+            left: 600px;
+            animation: fall 5s linear infinite;
+}
+.leaf8{
+    position: relative;
+            width: 20px;
+            height: 20px;
+            left: 550px;
+            animation: fall 9s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 1;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10%{
+        opacity:1;
+    }
+    20%{
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%{
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60%{
+        transform: translate(20px) rotate(180deg);
+    }
+    80%{
+        transform: translate(-20px) rotate(180deg);
+    }
+    100%{
+        top: 110%;
+        transform: translate(-20px) rotate(225deg)
+    }
+}
+
